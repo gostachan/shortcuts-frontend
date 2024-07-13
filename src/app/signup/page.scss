@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: 10px;
+  align-items: center;
+  margin: 150px auto;
+  height: 520px;
+  width: 450px;
+   
+  .login-form {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 2px 2px 5px 1px darkgray;
+    flex: 1;
+    width: 100%;
+    height: 80%;
+    position: relative;
+
+
+    .content {
+      margin: 10% auto;
+      width: 80%;
+      height: 80%;
+
+      .forget-pass {
+        margin-top: 20px;
+        color: blue;
+
+        a:hover {
+          padding-bottom: 2px;
+          border-bottom: 1px solid blue;
+        }
+      }
+
+      form {
+        .form-title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        height: 100%;
+        position: relative;
+
+        h1 {
+          color: dimgray;
+          padding-bottom: 10px;
+          border-bottom: 1.5px solid darkgray;
+        }
+        
+        .form-group {
+          height: 15%;
+          margin-top: 30px;
+
+          input {
+            width: 100%;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1.5px lightgray;
+            height: 100%;
+            padding-left: 10px;
+            color: gray;
+          }
+
+          input::placeholder {
+            font-size: 17px;
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .form-button {
+      font-size: 22px;
+      position: absolute;
+      width: 100%;
+      height: 50px;
+      background-color: #00BFFF;
+      color: white;
+      bottom: 0px;
+    }
+
+    .form-button:hover {
+      background-color: #007bff;
+    }
+  }
+}

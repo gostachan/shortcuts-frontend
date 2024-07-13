@@ -1,0 +1,56 @@
+  .record {
+    height: 50px;
+    line-height: 50px;
+
+    .column {
+      border-right: 1px solid lightgray;
+
+      .p-area {
+        width: 80%;
+        height: 90%;
+        margin: 0 auto;
+        white-space: nowrap; /* テキストを折り返さずに表示 */
+        overflow-x: auto; /* 横方向のオーバーフローを自動でスクロール */
+        overflow-y: hidden; /* 縦方向のオーバーフローを非表示にする */
+        // text-align: left;
+      }
+
+      .p-area::-webkit-scrollbar {
+        height: 5px; /* スクロールバーの高さ（横方向の場合） */
+      }
+      
+      /* スクロールバーのトラックのスタイルを設定 */
+      .p-area::-webkit-scrollbar-track {
+        // background: #f1f1f1; /* トラックの背景色 */
+      }
+      
+      /* スクロールバーのハンドルのスタイルを設定 */
+      .p-area::-webkit-scrollbar-thumb {
+        // background: #888; /* ハンドルの背景色 */
+        border-radius: 10px; /* ハンドルの角を丸くする */
+      }
+      
+      /* スクロールバーのハンドルがホバーされたときのスタイルを設定 */
+      .p-area::-webkit-scrollbar-thumb:hover {
+        background: #555; /* ハンドルのホバー時の背景色 */
+      }
+    }
+
+    .column-1 {
+      width: 10%;
+    }
+    .column-2 {
+      width: 15%;
+    }
+    .column-3 {
+      width: 30%;
+    }
+    .column-4 {
+      width: 30%;
+    }
+
+    .column-5 {
+      width: 15%;
+      border-right: none;
+    }
+  }

@@ -1,0 +1,31 @@
+.env-button {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  height: 35px;
+  border: 2px solid #007bff;
+  border-bottom: none;
+}
+
+.env-button:hover {
+  background-color: #007bff;
+}
+
+.env-off {
+  background-color: #00BFFF;
+}
+
+.env-on {
+  background-color: #007bff;
+}
+
+
+.first {
+  border-radius: 5px 5px 0 0;
+}
+
+.last {
+  border-bottom: 2px solid #007bff;
+  border-radius: 0 0 5px 5px;
+}

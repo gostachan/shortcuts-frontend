@@ -1,0 +1,14 @@
+.basic-button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: #007bff;
+}
+
+.basic-button:hover {
+  background-color: #0040ff;
+}

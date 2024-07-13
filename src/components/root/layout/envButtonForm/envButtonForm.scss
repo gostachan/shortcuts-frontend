@@ -1,0 +1,32 @@
+.env-button-form {
+  padding-left: 50px;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  height: 35px;
+  border: 2px solid #007bff;
+  background-color: #00BFFF;
+  border-bottom: none;
+}
+
+.forcus {
+  background-color: #007bff;
+}
+
+.env-button-form::placeholder {
+  color: white;
+}
+
+.env-button-form:hover {
+  background-color: #007bff;
+}
+
+.first-form {
+  border-radius: 5px 5px 0 0;
+}
+
+.last-form {
+  border-bottom: 2px solid #007bff;
+  border-radius: 0 0 5px 5px;
+}
