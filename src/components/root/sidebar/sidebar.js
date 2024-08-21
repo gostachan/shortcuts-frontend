@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useContext, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 import "./sidebar.scss";
 
@@ -13,6 +14,7 @@ import EnvButton     from "../layout/envButton/envButton";
 import EnvButtonForm from "../layout/envButtonForm/envButtonForm";
 
 export default function Sidebar() {
+  const router = useRouter();
   const { editBtnClicked, 
           toggleEditBtn, 
           renderEnvBtns, 
@@ -142,22 +144,15 @@ export default function Sidebar() {
             </form>
           </dev>
 
-
-
           <ToggleButton 
             onToggle={handleToggleEnv} 
             value={"Create Environment"}
             className={(isNewEnvFormOpen) ? "clicked" : "down-env-form-btn non-clicked"}/>
 
-
           <ToggleButton 
             onToggle={handleToggleShortcut} 
             value={"Create Shortcut"}
             className={(isShortcutModalOpen) ? "clicked" : "non-clicked"}/>
-          {/* <ToggleButton 
-            onToggle={handleToggleGroup}
-            value={"Create Group"}
-            className={(isGroupModalOpen) ? "clicked" : "non-clicked"}/> */}
           <ToggleButton 
             onToggle={handleToggleEdit}
             value={editBtnClicked ? "Quit" : "Edit"}
