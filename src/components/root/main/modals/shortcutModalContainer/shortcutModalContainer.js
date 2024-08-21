@@ -46,7 +46,8 @@ export default function ShortcutModalContainer({closeModal}) {
   }
 
   return (
-
+    // FIXME:リロードしないとモーダルのCSSが崩れる
+    // FIXME:リロードするとCSSが反映される
     <div className="container">
       <div className="new-table">
         <InputTable shortcutInfo={shortcutInfo}

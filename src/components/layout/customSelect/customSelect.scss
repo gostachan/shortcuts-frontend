@@ -18,14 +18,8 @@
       display: block;
       width: 99%;
       height: 47px;
-      // padding: 10px 20px;
       text-align: center;
-      // font-size: 16px;
-      // font-weight: 300;
-      // color: #333;
       background: #fff;
-      // border: 1px solid #ccc;
-      // border-radius: 4px;
       cursor: pointer;
       transition: all 0.3s ease;
     }
@@ -73,9 +67,6 @@
     .custom-option {
       position: relative;
       display: block;
-      // padding: 10px 20px;
-      // font-size: 16px;
-      // color: #333;
       cursor: pointer;
       transition: all 0.3s ease;
     }
@@ -85,9 +76,6 @@
       background: #f5f5f5;
     }
 
-    .custom-option.selection {
-      // font-weight: 600;
-    }
   }
 
   .custom-select.opened .custom-select-trigger::after {

@@ -25,6 +25,10 @@ export default function Login() {
     setCheck(!isChecked);
   }
 
+  function renderSignup() {
+    router.push("/signup");
+  }
+
   function handleClick() {
     const login_info = { "login_info": { "email":      form.email,
                                          "password":   form.password,
@@ -80,7 +84,7 @@ export default function Login() {
               ログイン情報を保存する
             </p>
             <div className="forgot-pass">
-              <a href="#">パスワードを忘れた</a>
+              <button onClick={renderSignup}>新規ユーザを作成</button>
             </div>
           </form>
         </div>

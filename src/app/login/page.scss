@@ -21,10 +21,14 @@
       height: 80%;
 
       .forgot-pass {
-        margin-top: 20px;
-        color: blue;
+        button {
+          background-color: rgb(245, 245, 245);
+          font-size: 16px;
+          margin-top: 18px;
+          color: blue;
+        }
 
-        a:hover {
+        button:hover {
           padding-bottom: 2px;
           border-bottom: 1px solid blue;
         }
